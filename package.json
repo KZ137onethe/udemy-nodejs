@@ -1,0 +1,19 @@
+{
+  "name": "udemy-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["nodejs", "monorepo"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/changelog-git": "^0.2.1",
+    "@changesets/cli": "^2.29.6"
+  }
+}
