@@ -1,4 +1,3 @@
 packages:
   - course/**/*
   - playgroud/*
-  - scripts
