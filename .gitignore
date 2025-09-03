@@ -1,4 +1,5 @@
-node_modules
-
+# 依赖或者编译产物文件夹
+node_modules/
 dist/
 target/
+

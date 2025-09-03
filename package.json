@@ -1,23 +1,37 @@
 {
   "name": "udemy-nodejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "> 这个项目旨在学习node.js为主，那为什么学习Node.js？🧐\r >\r > 1. 了解JavaScript的全部\r > 2. 了解前后端all的工作流程，包括计算机基本的知识\r > 3. 扩宽自己的视野，去做更多的事情，比如：I/O输入输出，如果你只是一名前端，你是没有机会去了解这些东西的\r > 4. 成为更全面的前端人才，所以必须熟悉服务端，全栈\r >\r > 它不是什么？\r >\r > 这不是为了成为全栈而学习的！因为它本来就不是我为了去竞争全栈工作而学习的",
   "main": "index.js",
   "engines": {
-    "node": "=22.19.0",
-    "nvm": ">=1.2.2",
-    "pnpm": ">=9.15.1"
+    "volta": ">=2.0.2",
+    "node": "22.19.0",
+    "pnpm": "10.15.1"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [
     "nodejs",
     "monorepo",
-    "nvm"
+    "volta"
   ],
-  "author": "",
+  "author": "kzonethe137",
   "license": "ISC",
   "devDependencies": {
     "@changesets/changelog-git": "^0.2.1",
     "@changesets/cli": "^2.29.6"
-  }
+  },
+  "volta": {
+    "node": "22.19.0",
+    "pnpm": "10.15.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KZ137onethe/udemy-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KZ137onethe/udemy-nodejs/issues"
+  },
+  "homepage": "https://github.com/KZ137onethe/udemy-nodejs#readme"
 }

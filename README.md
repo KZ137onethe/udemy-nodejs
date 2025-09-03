@@ -23,7 +23,7 @@
 
    VScode
 
-   Node.js/nvm
+   Node.js/volta
 
    wireshark
 
@@ -39,13 +39,11 @@
 
    * 使用
 
-     开始请执行，确保切换并使用项目指定的node.js版本
+     由于volta可以无缝处理不同项目中的不同工具版本，所以进入项目时，node.js和pnpm以及切换成指定版本
 
-     ```shell
-     nvm use $(Get-Content .nvmrc) # windows 请执行
-     nvm use # mac/liunx 请执行
-     ```
-
+     安装依赖
      
-
-   1. 
+     ```shell
+     pnpm i
+```
+     
