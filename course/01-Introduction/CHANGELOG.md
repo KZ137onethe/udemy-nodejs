@@ -1,5 +1,11 @@
 # setting-up
 
+## 1.1.1
+
+### Major Changes
+
+- refactor: 调整文件夹目录
+
 ## 1.1.0
 
 ### Minor Changes

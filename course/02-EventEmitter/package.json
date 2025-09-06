@@ -1,6 +1,6 @@
 {
-  "name": "@udemy-nodejs/setting-up",
-  "version": "1.1.0",
+  "name": "@udemy-nodejs/02-eventemitter",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
