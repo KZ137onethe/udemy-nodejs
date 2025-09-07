@@ -1,8 +1,14 @@
 # setting-up
 
+## 1.1.2
+
+### Patch Changes
+
+- chore: 为 package.json 添加根目录的 volta 的继承
+
 ## 1.1.1
 
-### Major Changes
+### Patch Changes
 
 - refactor: 调整文件夹目录
 

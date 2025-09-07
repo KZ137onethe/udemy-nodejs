@@ -15,7 +15,9 @@ importers:
         specifier: ^2.29.6
         version: 2.29.6
 
-  course/1-Introduction/setting-up: {}
+  course/01-Introduction: {}
+
+  course/02-EventEmitter: {}
 
 packages:
 
