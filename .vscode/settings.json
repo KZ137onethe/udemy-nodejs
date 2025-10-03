@@ -1,0 +1,8 @@
+{
+	"prettier.configPath": ".prettierrc.json5",
+	// 控制相关文件嵌套显示
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"package.json": ".editorconfig, .prettierrc*, pnpm-lock.yaml"
+	}
+}
