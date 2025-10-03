@@ -1,5 +1,11 @@
 # @udemy-nodejs/03-buffers
 
+## 1.2.0
+
+### Minor Changes
+
+- feat: 添加 Buffers 不同的分配方式说明
+
 ## 1.1.0
 
 ### Minor Changes
