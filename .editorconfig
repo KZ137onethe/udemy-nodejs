@@ -1,0 +1,21 @@
+; 网址：https://editorconfig.org/
+
+; 作为顶层配置文件
+root = true
+
+; 代表所有文件
+[*]
+charset = utf-8 ; 文件字符编码
+end_of_line = unset ; 行尾文件格式,不同操作系统的值不尽相同
+insert_final_newline = true ; 文件完成时是否留一行
+trim_trailing_whitespace = true ; 是否删除行尾的空白
+indent_style = tab ; 缩进样式
+indent_size = tab ; 缩进大小
+tab_width = 2 ; 单个tab键的宽度,当indent_size为数字时默认和indent_size一样
+max_line_length = 100 ; 当一行的字符数时大于指定的字符数之后强制换行。
+
+[*.py] ; 代表.md为后缀名的文件的配置会覆盖之前的配置
+tab_width = 4;
+
+[*.md] ; 代表.md为后缀名的文件的配置会覆盖之前的配置
+trim_trailing_whitespace = false
