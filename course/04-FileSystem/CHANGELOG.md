@@ -1,5 +1,11 @@
 # @udemy-nodejs/04-filesystem
 
+## 1.4.0
+
+### Minor Changes
+
+- feat: 添加文件系统操作的示例
+
 ## 1.3.0
 
 ### Minor Changes
