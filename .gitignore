@@ -3,3 +3,7 @@ node_modules/
 dist/
 target/
 
+# 忽略的文件
+/course/04-FileSystem/src/*/*.txt
+!/course/04-FileSystem/src/*/command.txt
+!/course/04-FileSystem/src/threeWays/file.txt
