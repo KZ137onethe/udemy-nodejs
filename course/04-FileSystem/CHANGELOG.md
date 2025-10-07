@@ -1,5 +1,11 @@
 # @udemy-nodejs/04-filesystem
 
+## 1.3.0
+
+### Minor Changes
+
+- feat: 添加文件系统监听文件和读取文件的示例
+
 ## 1.2.0
 
 ### Minor Changes
