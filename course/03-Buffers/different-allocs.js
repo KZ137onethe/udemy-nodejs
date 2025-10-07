@@ -7,6 +7,9 @@ const { Buffer } = require("buffer");
  */
 console.log("内存池初始大小：", Buffer.poolSize);
 
+// 位操作
+console.log(Buffer.poolSize >> 1, Buffer.poolSize << 1);
+
 /** Buffer.allocUnsafe
  * 1. 从内存池中找一块可用的内存
  * 2. 直接返回这块内存的引用，不修改其中内容

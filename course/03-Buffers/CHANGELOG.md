@@ -1,5 +1,11 @@
 # @udemy-nodejs/03-buffers
 
+## 1.2.1
+
+### Patch Changes
+
+- fix: 补充一个位操作的例子
+
 ## 1.2.0
 
 ### Minor Changes
