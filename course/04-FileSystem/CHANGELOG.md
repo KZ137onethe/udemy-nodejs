@@ -1,5 +1,11 @@
 # @udemy-nodejs/04-filesystem
 
+## 1.4.1
+
+### Patch Changes
+
+- fix: 修复子仓库没有继承大仓的 volta 配置的问题
+
 ## 1.4.0
 
 ### Minor Changes

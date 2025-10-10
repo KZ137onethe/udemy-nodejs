@@ -1,6 +1,6 @@
 {
 	"name": "@udemy-nodejs/04-filesystem",
-	"version": "1.4.0",
+	"version": "1.4.1",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
@@ -9,5 +9,8 @@
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"packageManager": "pnpm@10.15.1"
+	"packageManager": "pnpm@10.15.1",
+	"volta": {
+		"extends": "../../package.json"
+	}
 }
