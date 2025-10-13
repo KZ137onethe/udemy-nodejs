@@ -71,7 +71,27 @@ Node.js中的`events`模块，用于**事件驱动编程**，主要围绕着一�
 
 ### 03-Buffers
 
-#### 二进制/十进制/十六进制
+#### 二进制/八进制/十进制/十六进制
+
+数制是一种表示数值的方法，每种数制都有其基数（即该数制中使用的数字个数）。
+
+- **二进制（Binary）**：基数为2，使用0和1两个数字。由于计算机内部使用电位高低来表示信息，因此二进制非常适合用于计算机系统。
+- **八进制（Octal）**：基数为8，使用0到7八个数字。在早期的计算机系统中较为常用，但现在较少直接使用。
+- **十进制（Decimal）**：基数为10，使用0到9十个数字。这是人类日常生活中最常用的数制。
+- **十六进制（Hexadecimal）**：基数为16，使用0到9以及A到F共十六个符号。广泛应用于计算机科学领域，特别是在表示内存地址、颜色编码等方面。
+
+在`JavaScript`中表示：
+
+```javascript
+let a = 0b10 0011 0100 // 二进制 1 * 2**9 + 0 * 2**8 + 0 * 2**7 + 0 * 2**6 + 1 * 2**5 + 1 * 2**4 + 0 * 2**3 + 1 * 2**2 + 0 * 2**1 + 0 * 2**0 = 654
+let b = 0o1064 // 八进制 1 * 8**3 + 0 * 8**2 + 6 * 8**1 + 4 * 8**0 = 654
+let c = 564 // 十进制 5 * 10**2 + 6 * 10**1 + 4 * 10**0 = 654
+let d = 0x234 // 十六进制 2 * 16**2 + 3 * 16**1 + 4 * 16**0 = 564
+```
+
+在计算器中表示:
+
+![](.\.static\img\03_01_001.png)
 
 #### 字符集
 
@@ -93,5 +113,42 @@ Unicode是字符定义的标准，每个字符都有一个“唯一的编号”�
 
 #### Buffer
 
-Buffer 也叫做**缓冲区**
+Buffer 也叫做**缓冲区**，根据Node.js的官方解释：**Buffer对象表示固定长度的字节序列。**其存储的是**原始字节数据**（0-255 的整数），这些字节可以用不同的**编码方式**来解读和表示：
+
+```javascript
+// 在 Node.js 中，Buffer全局可用
+var buff_0 = Buffer.alloc(8); // 分配8个位置
+buff_0[0] = 0x48;
+buff_0[1] = 0x69;
+buff_0[2] = 0x21;
+console.log(buff_0.toString("utf-8")); // 以 utf-8编码 的方式输出字符串
+```
+
+下面介绍几个重要的API：
+
+* Buffer 初始化
+  * Buffer.alloc：分配一个大小为字节的新缓冲区。如果填充未定义，则缓冲区将填充为零。
+  * Buffer.from：使用0-255范围内的字节数组分配新的缓冲区。超出该范围的数组条目将被截断以适应它
+  * Buffer.allocUnsafe：分配一个大小为字节的新缓冲区。如果大小大于buffer.constants.MAX_LENGTH或小于0，抛出ERR_OUT_OF_RANGE异常；以这种方式创建的Buffer实例的缓冲区的内容来源于内存池，内容未知，可能包含敏感数据。
+  * Buffer.allocUnsafeSlow：类似于 Buffer.allocUnsafe，但是总是会独立分配,不使用内存池 (也就是大于 Buffer.poolSize 则优先使用),所以速度上比 Buffer.allocUnsafe 慢，且该 Buffer 会长期存在
+
+* buff.toString：根据编码中指定的字符编码将buf解码为字符串。
+
+* buffer.constants.MAX_LENGTH：单个Buffer实例允许的最大大小。
+
+* buff.fill: 填充buffer
+
+* Buffer.poolSize：这是用于内存池的预分配内部Buffer实例的大小（以字节为单位）。此值可以修改。
+
+* Buffer 读写能力
+
+  * buff.write
+
+  * buff.read
+
+    ....
+
+其中 `Buffer.` 代表Buffer对象的静态方法，`buff.` 代表Buffer对象的方法，`buffer.`代表buffer的其他API。
+
+更多API请参考：[Buffer](https://nodejs.org/docs/latest/api/buffer.html)；更多代码请参考示例：./course/03-Buffers
 
