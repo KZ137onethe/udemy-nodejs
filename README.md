@@ -152,3 +152,12 @@ console.log(buff_0.toString("utf-8")); // 以 utf-8编码 的方式输出字符�
 
 更多API请参考：[Buffer](https://nodejs.org/docs/latest/api/buffer.html)；更多代码请参考示例：./course/03-Buffers
 
+### 04-FileSystem
+
+### 05-Streams
+
+用途：
+
+1. 对数据进行加密
+2. 对数据进行压缩
+
