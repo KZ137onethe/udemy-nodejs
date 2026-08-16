@@ -42,7 +42,7 @@
      由于volta可以无缝处理不同项目中的不同工具版本，所以进入项目时，node.js和pnpm以及切换成指定版本
 
      安装依赖
-     
+
      ```shell
      pnpm i
 
@@ -91,7 +91,7 @@ let d = 0x234 // 十六进制 2 * 16**2 + 3 * 16**1 + 4 * 16**0 = 564
 
 在计算器中表示:
 
-![](.\.static\img\03_01_001.png)
+<img src=".\.static\img\03_01_001.png" style="float: left" />
 
 #### 字符集
 
@@ -156,8 +156,19 @@ console.log(buff_0.toString("utf-8")); // 以 utf-8编码 的方式输出字符�
 
 ### 05-Streams
 
+概念：
+
+在`streams`中，分为四种：
+1. 可读流 readable
+2. 可写流 writable
+3. 双工流 duplex
+4. 转换流 transform
+
+`streams`缓冲区大小默认为`16384 bytes`
+
 用途：
 
 1. 对数据进行加密
 2. 对数据进行压缩
+3. 读写大文件，并保持较高的性能
 

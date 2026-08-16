@@ -8,4 +8,4 @@ target/
 !/course/04-FileSystem/src/*/command.txt
 !/course/04-FileSystem/src/threeWays/file.txt
 
-/course/05-Streams/example/*.txt
+static/
